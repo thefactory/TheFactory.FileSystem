@@ -13,6 +13,8 @@ namespace TheFactory.FileSystem {
 
         void Remove(string path);
 
+        void RemoveDirectory(string path);
+
         void Move(string fromPath, string toPath);
     }
 

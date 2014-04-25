@@ -29,6 +29,12 @@ namespace TheFactory.FileSystem.IOS {
             File.Delete(path);
         }
 
+        public void RemoveDirectory(string path) {
+            if (Directory.Exists(path)) {
+                Directory.Delete(path, true);
+            }
+        }
+
         public void Move(string fromPath, string toPath) {
             File.Move(fromPath, toPath);
         }
