@@ -6,8 +6,8 @@ using IOFileMode = System.IO.FileMode;
 using IOFileAccess = System.IO.FileAccess;
 using IOFileShare = System.IO.FileShare;
 
-namespace TheFactory.FileSystem.IOS {
-    public class IOSFileSystem : IFileSystem {
+namespace TheFactory.FileSystem.SystemIO {
+    public class SystemIOFileSystem : IFileSystem {
 
         public Stream GetStream(string path, FileMode mode, FileAccess access, FileShare share) {
             return new FileStream(path, mode.ToIO(), access.ToIO(), share.ToIO());

@@ -5,7 +5,7 @@ using IOFileAccess = System.IO.FileAccess;
 using IOFileShare = System.IO.FileShare;
 using TheFactory.FileSystem;
 
-namespace TheFactory.FileSystem.IOS {
+namespace TheFactory.FileSystem.SystemIO {
     public static class FileEnumExtensions {
         public static IOFileMode ToIO(this FileMode This) {
             switch (This) {
